@@ -1,0 +1,12 @@
+to initialize package.json = npm init -y
+to initialize tsconfig.json =- tsc --init
+
+ "scripts": {
+    "start:build":"tsc -w",
+    "start:run":"nodemon build/index.js",
+    "start":"concurrently npm:start:*"
+  },
+
+  inside this tag you can give as start:typescript or anything you like instead of start:build
+  same is applicable for start:run
+  but not applicable for start --  it must be as start only.
